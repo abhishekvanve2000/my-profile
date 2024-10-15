@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Card</title>
+    <style>
+        /* To Set Vertical Two Sided PAge */
+        .imagecontainer{
+            display: inline-block;
+            margin-right: 35px;
+        }
+        .content{
+            display: inline-block;
+        }
+        /* How To Chage Colour OF COntent/Background Colour By Hover */
+        .Header a:hover{
+          
+            color: rgb(91, 132, 132);
+        }
+        .Header a::before{
+            content: "A";
+        }
+        /* change colur of containt while selecting it */
+        .para::selection{
+            color: rgb(165, 42, 42);
+        }
+    </style>
+</head>
+<body>
+    <!-- To Set Vertical Two Sided PAge -->
+        <div>
+            <div class="imagecontainer">
+                <img src="assets/00-Photoroom.png" alt="my profile photo" width="252px" height="250px">
+            </div>
+            <div class="content">
+                <h2>list of my friends</h2>
+                <ul>
+                    <li>yogesh</li>
+                    <li>amar</li>
+                    <li>Ritik</li>
+                    <li>Shubham</li>
+                    <li>Varad</li>
+                </ul>
+            </div>
+        </div>
+    <!--How To Chage Colour OF COntent/Background Colour By Hover -->
+    <nav class="Header">
+        <a href="home.html" target="iframe">Home</a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="techStack.html" target="iframe">Tech Stacks</a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="project.html" target="iframe">Project</a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="edication.html" target="iframe">Education</a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="abouMe.html" target="iframe">About Me</a>
+      </nav>
+      <!--change colur of containt while selecting it -->
+      <p class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis molestiae laboriosam autem alias maiores rerum expedita saepe, natus tenetur, fuga suscipit quae delectus voluptate!
+      </p>
+
+
+</body>
+</html>
